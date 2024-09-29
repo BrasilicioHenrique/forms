@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>botões</title>
+  <style>
+    body {
+      background-color: pink;
+      font-family: Arial, sans-serif;
+      color: black;
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .btn {
+      background-color: white;
+      color: black;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="pergunta">
+    <h1>Irmão, tu é?</h1>
+    <button id="sim" class="btn" onclick="resposta('sim')">Sim</button>
+    <button id="nao" class="btn" onclick="resposta('nao')">Não</button>
+    <button id="defnao" class="btn" onclick="resposta('defnao')">Definitivamente Não</button>
+  </div>
+
+  <div id="resposta" style="display: none;">
+    <p id="mensagem"></p>
+  </div>
+  
+  <script>
+    let contador = 0;
+    const limiteCliques = 5;
+    function getRandomPosition() {
+      const offset = 50;
+      const randomX = Math.floor(Math.random() * (window.innerWidth - offset * 2));
+      const randomY = Math.floor(Math.random() * (window.innerHeight - offset * 2));
+      return { x: randomX + offset, y: randomY + offset };
+    }
+
+    function resposta(opcao) {
+      if (opcao === 'sim') {
+        document.getElementById('pergunta').style.display = 'none';
+        document.getElementById('resposta').style.display = 'block';
+        document.getElementById('mensagem').innerText = 'Eu sempre soube.';
+      } 
+      else if (opcao === 'nao') {
+        contador++;
+        if (contador >= limiteCliques) {
+          document.getElementById('nao').style.display = 'none';
+          alert('Pare de mentir!');
+        } 
+        else {
+          const randomPosition = getRandomPosition();
+          let nao = document.getElementById('nao');
+          nao.style.position = 'absolute';
+          nao.style.left = `${randomPosition.x}px`;
+          nao.style.top = `${randomPosition.y}px`;
+        }
+      } 
+      else if (opcao === 'defnao') {
+        document.getElementById('defnao').style.display = 'none';
+        alert('Deixe de coisa!');
+      }
+    }
+  </script>
+</body>
+</html>
