@@ -10,14 +10,19 @@
 
 <body>
 
-  <div class="pergunta">
-    <h1>Irmão, tu é gay?</h1>
-  </div>
-  <div class="respostas">
-    <button id="sim" class="botao" onclick="resposta('sim')">Sim</button>
-    <button id="nao" class="botao" onclick="resposta('nao')">Não</button>
-    <button id="def_nao" class="botao" onclick="resposta('def_nao')">Definitivamente Não</button>
-  </div>
+  <section id="main">
+    
+    <div class="pergunta">
+      <h1>Irmão, tu é gay?</h1>
+    </div>
+
+    <div class="botoes">
+      <button id="sim" class="botao" onclick="resposta('sim')">Sim</button>
+      <button id="nao" class="botao" onclick="resposta('nao')">Não</button>
+      <button id="def_nao" class="botao" onclick="resposta('def_nao')">Definitivamente Não</button>
+    </div>
+
+  </section>
 
   <div id="resposta" style="display: none;">
     <p id="mensagem"></p>
