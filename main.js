@@ -1,5 +1,5 @@
 let contador = 0; // variavel que pode mudar = 0
-const maximoCliques = 5; // variavel que nao pode mudar = 5
+const maximoCliques = 20; // variavel que nao pode mudar = 20
 
 function gerarPosicaoAleatoria() {
   const margem = 100; // define margem para nao deixar proximo da borda
@@ -23,17 +23,32 @@ function resposta(opcao) {
       alert("Pare de mentir!"); // escrever texto apos clicar o maximo de cliques
     }
 
-    else { // se o contador for menor que o maximo de cliques
+    else if (contador <= maximoCliques) { // se o contador for menor que o maximo de cliques
       const posicaoAleatoria = gerarPosicaoAleatoria(); // define variavel com escala (x, y) aleatorias da funcao gerarPosicaoAleatoria
       let botaoNao = document.getElementById("nao"); // cria variavel que pega id do botao "nao"
       botaoNao.style.position = "absolute"; // define que no style: ... {position: absolute;}
       botaoNao.style.left = `${posicaoAleatoria.x}px`; // define que no style: ... {left: a posicao aleatoria}
       botaoNao.style.top = `${posicaoAleatoria.y}px`; // define que no style: ... {top: a posicao aleatoria}
     }
+
+    if (contador === 5 || contador === 10 || contador === 15) { // aparecer botao "mengo"
+      document.getElementById("hide").style.display = "block";
+    }
   }
 
   else if (opcao === "def_nao") { // se o botao for "def_nao"
     document.getElementById("def_nao").style.display = "none"; // retira o botao
     alert("Deixe de coisa!"); 
+  }
+
+  else if (opcao === "mengo") { // se o botao for "mengo"
+    document.getElementById("main").style.display = "none";
+    document.getElementById("ehmengo").style.display = "block";
+  }
+
+  else if (opcao == "nehmengo") {
+    document.getElementById("main").style.display = "block";
+    document.getElementById("ehmengo").style.display = "none";
+    document.getElementById("hide").style.display = "none";
   }
 }
