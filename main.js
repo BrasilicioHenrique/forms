@@ -1,5 +1,5 @@
 let contador = 0; // variavel que pode mudar = 0
-const maximoCliques = 20; // variavel que nao pode mudar = 20
+const maximoCliques = 30; // variavel que nao pode mudar = 30
 
 function gerarPosicaoAleatoria() {
   const margem = 100; // define margem para nao deixar proximo da borda
@@ -31,7 +31,7 @@ function resposta(opcao) {
       botaoNao.style.top = `${posicaoAleatoria.y}px`; // define que no style: ... {top: a posicao aleatoria}
     }
 
-    if (contador === 5 || contador === 10 || contador === 15) { // aparecer botao "mengo"
+    if (contador === 28) { // aparecer botao "mengo"
       document.getElementById("hide").style.display = "block";
     }
   }
