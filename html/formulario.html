@@ -9,16 +9,31 @@
 <body>
     <form action="">
         <label for="name">Escreva o seu nome</label>
-        <input type="text" id="name"> <br><br>
+        <input type="text" id="name"><br><br>
 
         <label for="email">Escreva seu email</label>
-        <input type="email" id="email"> <br><br>
+        <input type="email" id="email"><br><br>
 
         <label for="nasc">Coloque sua data de nascimento</label>
-        <input type="date" id="nasc"> <br><br>
+        <input type="date" id="nasc"><br><br>
 
-        <a href="botao.html"><input type="button" value="Continuar"></a>
+        <input type="button" value="Continuar" onclick="verificarRespostas()">
+        <!-- COLOCAR PARA DIRECIONAR PARA O botao.html -->
     </form>
+
+    <script>
+        function verificarRespostas() {
+            const nome = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const nasc = document.getElementById("nasc").value;
+
+            if (!nome || !email || !nasc) {
+                alert("Todos os campos devem ser preenchidos!");
+                return false;
+            }
+            return true
+        }
+    </script>
 
     <footer>
         <pre><address>Desenvolvido por Brasilicio</address></pre>
