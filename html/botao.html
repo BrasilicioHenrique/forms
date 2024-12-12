@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Formulário Etapa 3</title>
+</head>
+<body class="question">
+    <section id="main">
+        <div class="question">
+            <h1>Irmão, tu é gay?</h1>
+        </div>
+
+        <div class="buttons">
+            <button id="sim" class="botao" onclick="resposta('sim')">Sim</button>
+            <button id="nao" class="botao" onclick="resposta('nao')">Não</button>
+            <button id="def_nao" class="botao" onclick="resposta('def_nao')">Definitivamente não</button>
+            <div id="hide" style="display: none;">
+                <button id="mengo" class="botao" onclick="resposta('mengo')">EU SOU MENGO PORRAA</button>
+            </div>
+        </div>
+    </section>
+
+    <div id="ehmengo" style="display: none;">
+        <h1>É MENGO MESMO???</h1>
+        <button id="ehmengo" class="botao" onclick="resposta('ehmengo')"><a href="https://www.youtube.com/watch?v=Sx86-18V3m8&t=0s">SOU PORRAA</a></button>
+        <button id="nehmengo" class="botao" onclick="resposta('nehmengo')">Não sou</button>
+    </div>
+
+    <div id="response" style="display: none;">
+        <p id="message"></p>
+    </div>
+
+    <script src="../js/main.js"></script>
+    
+    <footer>
+        <pre><address>Desenvolvido por Brasilicio</address></pre>
+    </footer>
+</body>
+</html>
