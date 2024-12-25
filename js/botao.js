@@ -11,8 +11,8 @@ function gerarPosicaoAleatoria() {
 function resposta(opcao) {
   if (opcao === "sim") { // se o botao for "sim"
     document.getElementById("main").style.display = "none"; // deixa no style o display none do id main (apaga tudo desse id)
-    document.getElementById("response").style.display = "block"; // deixa no style do id reposta o display block
-    document.getElementById("message").innerText = "Eu sempre soube."; // escrever esse texto no id "mensagem"
+    document.getElementById("mensagens").style.display = "block"; // deixa no style do id reposta o display block
+    document.getElementById("frase").innerText = "Eu sempre soube."; // escrever esse texto no id "mensagem"
   }
 
   else if (opcao === "nao") { // se o botao for "nao"
