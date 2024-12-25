@@ -8,6 +8,7 @@ function verificarRespostas() {
         return false;
     }
     else {
-        window.location.href = "../html/botao.html"
+        alert("Ao continuat, você concorda em compartilhar esses dados.")
+        window.location.href = "../html/botao.html";
     }
 }
