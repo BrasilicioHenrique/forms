@@ -12,7 +12,9 @@ function resposta(opcao) {
   if (opcao === "sim") { // se o botao for "sim"
     document.getElementById("main").style.display = "none"; // deixa no style o display none do id main (apaga tudo desse id)
     document.getElementById("mensagens").style.display = "block"; // deixa no style do id reposta o display block
-    document.getElementById("frase").innerText = "Eu sempre soube."; // escrever esse texto no id "mensagem"
+    document.getElementById("frase").innerText = "Eu sempre soube."; // escrever esse texto no id "frase"
+    document.getElementById("ver_nomes").innerText = "Todos que clicaram em sim" // escrever esse texto no botao de id "ver_nomes"
+    document.getElementById("link").href = "nomes_gay.html" // coloca esse redirecionamento no link
   }
 
   else if (opcao === "nao") { // se o botao for "nao"
@@ -44,6 +46,14 @@ function resposta(opcao) {
   else if (opcao === "mengo") { // se o botao for "mengo"
     document.getElementById("main").style.display = "none"; // some com o section main
     document.getElementById("ehmengo").style.display = "block"; // aparece a div ehmengo
+  }
+
+  else if (opcao == "ehmengo") { // se o botao for "ehmengo"
+    document.getElementById("ehmengo").style.display = "none"; // some com a div ehmengo
+    document.getElementById("mensagens").style.display = "block"; // deixa no style do id reposta o display block
+    document.getElementById("frase").innerText = "FLAMENGO EU SEMPRE HEI DE SER"; // escrever esse texto no id "frase"
+    document.getElementById("ver_nomes").innerText = "Todos flamenguistas" // escrever esse texto no botao de id "ver_nomes"
+    document.getElementById("link").href = "nomes_mengo.html" // coloca esse redirecionamento no link
   }
 
   else if (opcao == "nehmengo") { // se o botao for "nehmengo"
