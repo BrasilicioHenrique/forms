@@ -37,18 +37,18 @@ function resposta(opcao) {
   }
 
   else if (opcao === "def_nao") { // se o botao for "def_nao"
-    document.getElementById("def_nao").style.display = "none"; // retira o botao
-    alert("Deixe de coisa!"); 
+    document.getElementById("def_nao").style.display = "none"; // retira o botao def_nao
+    alert("Deixe de coisa!"); // escreve texto após clicar
   }
 
   else if (opcao === "mengo") { // se o botao for "mengo"
-    document.getElementById("main").style.display = "none";
-    document.getElementById("ehmengo").style.display = "block";
+    document.getElementById("main").style.display = "none"; // some com o section main
+    document.getElementById("ehmengo").style.display = "block"; // aparece a div ehmengo
   }
 
-  else if (opcao == "nehmengo") {
-    document.getElementById("main").style.display = "block";
-    document.getElementById("ehmengo").style.display = "none";
-    document.getElementById("botao_escondido").style.display = "none";
+  else if (opcao == "nehmengo") { // se o botao for "nehmengo"
+    document.getElementById("main").style.display = "block"; // aparece com o section main
+    document.getElementById("ehmengo").style.display = "none"; // some com a div ehmengo
+    document.getElementById("botao_escondido").style.display = "none"; // some o botao_escondido
   }
 }
