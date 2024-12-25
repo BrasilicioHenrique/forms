@@ -8,7 +8,7 @@ function verificarRespostas() {
         alert("Todos os campos devem ser preenchidos!"); // escreve se a situação acima for true
     }
     else {
-        alert("Ao continuat, você concorda em compartilhar esses dados."); // escreve se a condição do if acima for false
+        alert("Ao continuar, você concorda em compartilhar esses dados."); // escreve se a condição do if acima for false
         window.location.href = "../html/botao.html"; // redireciona a página para botao.html
     }
 }
