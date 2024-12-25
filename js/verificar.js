@@ -7,5 +7,7 @@ function verificarRespostas() {
         alert("Todos os campos devem ser preenchidos!");
         return false;
     }
-    return true
+    else {
+        window.location.href = "../html/botao.html"
+    }
 }
