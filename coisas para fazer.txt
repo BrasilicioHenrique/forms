@@ -1,0 +1,11 @@
+AJEITAR CSS DE TODOS OS ARQUIVOS
+
+melhorar aparência do forms
+
+filtrar respostas do forms
+
+adicionar banco de dados
+
+filtrar e modificar banco de dados
+
+exibir banco de dados de forma organizada no nomes_gay.html e nomes_mengo.html
