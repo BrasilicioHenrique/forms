@@ -32,7 +32,7 @@ function resposta(opcao) {
     }
 
     if (contador === 28) { // aparecer botao "mengo"
-      document.getElementById("hide").style.display = "block";
+      document.getElementById("botao_escondido").style.display = "block";
     }
   }
 
@@ -49,6 +49,6 @@ function resposta(opcao) {
   else if (opcao == "nehmengo") {
     document.getElementById("main").style.display = "block";
     document.getElementById("ehmengo").style.display = "none";
-    document.getElementById("hide").style.display = "none";
+    document.getElementById("botao_escondido").style.display = "none";
   }
 }
