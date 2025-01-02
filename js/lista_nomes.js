@@ -1,0 +1,3 @@
+let nomesGay = [];
+
+let nomesFlamengo = [];
