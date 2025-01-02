@@ -40,7 +40,7 @@ function resposta(opcao) {
 
   else if (opcao === "def_nao") { // se o botao for "def_nao"
     document.getElementById("def_nao").style.display = "none"; // retira o botao def_nao
-    alert("Deixe de coisa!"); // escreve texto após clicar
+    alert("Você está mentindo."); // escreve texto após clicar
   }
 
   else if (opcao === "mengo") { // se o botao for "mengo"
