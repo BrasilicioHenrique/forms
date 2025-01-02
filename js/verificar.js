@@ -1,6 +1,6 @@
 function verificarRespostas() {
     // criando variáveis com os valores escritos no forms
-    const nome = document.getElementById("name").value;
+    const nome = document.getElementById("nome").value;
     const email = document.getElementById("email").value;
     const nasc = document.getElementById("nasc").value;
 
