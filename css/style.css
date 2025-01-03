@@ -3,6 +3,9 @@ body {
     text-align: center;
     margin-top: 50px;
 }
+body.question {
+    background-color: violet;
+}
 .botao {
     background-color: white;
     color: black;
