@@ -1,10 +1,13 @@
-let nomesGay = [];
-let nomesFlamengo = [];
+const flamengo = document.getElementById("ehmengo");
+const gay = document.getElementById("sim");
 
-const formulario = document.getElementById("formulario");
-const listaGay = document.getElementById("listaGay");
-const listaMengo = document.getElementById("listaMengo")
+let escolhaUsuario;
 
-function atualizarLista () {
-    
+function handleClick(buttonId) {
+    escolhaUsuario = buttonId;
+    console.log(`Você clicou no ${escolhaUsuario}`);
 }
+
+flamengo.addEventListener('click', () => handleClick('flamengo'));
+gay.addEventListener('click', () => handleClick('gay'));
+
